@@ -1,0 +1,6 @@
+nome = input('digite um nome ou um numero: ')
+print('Este tipo e string? ', nome.__str__())
+print ('Se tem espaço? ', nome.isspace())
+print ('É um numero? ', nome.isnumeric())
+print ('É alfanumerico? ',nome.isalnum())
+print ("É capitalizada? ",nome.istitle())

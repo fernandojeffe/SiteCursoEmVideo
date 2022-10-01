@@ -1,0 +1,8 @@
+print('\033[7;33mOlá Mundo!\033[m')
+print('\033[31;40mOlá Mundo!\033[m')
+print('\033[1;34;41mOlá mundo\033[m')
+print('\033[4;36;42mOlá Mundo!\033[m')
+print('\033[7;37;43mOlá mundo\033[m'fhmns('\033[31mOlá Mundo!\033[m')
+print('\033[1;32mOlá mundo\033[m')
+print('\033[4;33mOlá Mundo!\033[m')
+print('\033[7;36mOlá mundo\033[m')
