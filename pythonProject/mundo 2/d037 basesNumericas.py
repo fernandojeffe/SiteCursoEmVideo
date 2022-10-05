@@ -1,17 +1,14 @@
+
 num = int(input('Digite um número inteiro: '))
 print('\033[31m<>\033[m'*15)
-base = int(input('Digite [1] para binario!\nDigite [2] para octa\nDigite [3] para hexadecimal'))
+base = int(input('Digite [1] para binario!\nDigite [2] para octa\nDigite [3] para hexadecimal: '))
 print('\033[31m<>\033[m'*15)
 if base == 1:
-    conversao = bin(num) [2 :]
-    nome = "Binario"
+    print('O número \033[36m{}\033[m convertido para \033[33mBINARIO\033[m é \033[35m{}\033[m'.format(num,bin(num)[2:]))
+
 elif base == 2:
-    conversao = oct(num) [2 :]
-    nome = "Octa"
+    print('O número \033[36m{}\033[m convertido para \033[33mOCTAL\033[m é \033[35m{}\033[m'.format(num,oct(num)[2:]))
 elif base == 3:
-    conversao = hex(num) [2 :]
-    nome = 'Hexadecimal'
+    print('O número \033[36m{}\033[m convertido para \033[33mHEXADECIMAL\033[m é \033[35m{}\033[m'.format(num,oct(num)[2:]))
 else:
     print('Número invalido! "Tente novamente"')
-
-print('O número \033[36m{}\033[m convertido para base \033[33m{}\033[m é \033[35m{}\033[m'.format(num,nome,conversao))
