@@ -14,12 +14,12 @@ print('''Suas opções:
 jogador = int(input('qual é a sua jogada? '))
 
 
-'''print('JO')
+print('JO')
 sleep(1)
 print('KEN')
 sleep(1)
 print('PO!!!')
-sleep(1) '''
+sleep(1) 
 
 # processo para substituir o numero randomico pela lista 
 print ('-='*11)
