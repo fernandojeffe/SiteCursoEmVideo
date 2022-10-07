@@ -23,9 +23,11 @@ elif escolha == 2:
             dividido = produto / parcela
             print('O preço ficara R${:.2f} em 2 parcelas de R${:.2f}'.format(produto,dividido))
         elif parcela > 3:
-            descdiv = (produto*30)/100
-            preçoFinal3 = produto - descdiv
+            descdiv = (produto*20)/100
+            preçoFinal3 = produto + descdiv
             parcediv  = preçoFinal3 / parcela
-            print('O preço com desconto de R${:.2f} ficara com preço final de {:.2f}\n em {:.0f} parcelas de R${:.2f}'.format(descdiv,preçoFinal3,parcela,parcediv))
+            print('O preço com o crecimo de 20% é de R${:.2f} ficara com preço final de {:.2f}\n em {:.0f} parcelas de R${:.2f}'.format(descdiv,preçoFinal3,parcela,parcediv))
+    else:
+         print ('Opão errada! tente novamente')
 else:
     print ('Opão errada! tente novamente')
