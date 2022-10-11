@@ -7,11 +7,11 @@ num = int(input('Digite um número: '))
 print('processando...')
 sleep(3)
 sorteio = (randint (0,5))
-escolido = sorteio
+escolhido = sorteio
 if (num == sorteio):
     print('Voce acertou! Parabéns')
     if (num > 5):
         print ('numero mair digitado tente novamente')
 else:
     print('Tente de novo!')
-    print('O numero escolhido foi {}'.format(escolido))
+    print('O numero escolhido foi {}'.format(escolhido))
