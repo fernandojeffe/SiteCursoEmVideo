@@ -1,7 +1,14 @@
-from os import initgroups
-cont = num = mult = 0
+cont = 1 
+num = mult = 0
 
-while num == -num:
+while True:
     num = int(input('Quer ver tabuada de qual valor: '))
-    cont += 1
-    mult *= num
+    if num <= -1:
+        break
+    for cont in range (10):
+        cont += 1
+        mult = num * cont
+        print(f'{cont}  x  {num}  = {mult}')
+    
+    
+

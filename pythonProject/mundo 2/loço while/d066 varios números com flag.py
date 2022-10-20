@@ -4,6 +4,6 @@ while num != 999:
     contador += 1
     if num == 999:        
         break
-    soma += num
+    soma += num 
 
-print(f'A soma dos {contador} e foi de {soma}')
+print(f'A soma dos {contador-1} e foi de {soma}')

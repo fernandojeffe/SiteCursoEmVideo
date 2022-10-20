@@ -1,5 +1,4 @@
 #nesse codigo não consegui fazer
-from pickle import FROZENSET
 from random import randint
 from time import sleep
 
