@@ -9,6 +9,8 @@ while True:
         cont += 1
         mult = num * cont
         print(f'{cont}  x  {num}  = {mult}')
+print('tabuada encerrada ')
+
     
     
 
