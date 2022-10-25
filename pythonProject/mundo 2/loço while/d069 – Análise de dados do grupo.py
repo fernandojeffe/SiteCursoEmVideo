@@ -18,9 +18,9 @@ while True:
     if saida == 'N':
         break
 
-print(f'Foram cadastrados {total18} de pessas com mais de 18 anos. ')
-print(f'Foram cadastrados {homens} total de homens. ')
-print(f'Foram cadastrados {mulherm} com menos de 20 anos. ')
+print(f'Foram cadastrados {total18} pessas com mais de 18 anos. ')
+print(f'Foram cadastrados {homens} homens. ')
+print(f'Foram cadastrados {mulherm} mulher com menos de 20 anos. ')
 
 
 
