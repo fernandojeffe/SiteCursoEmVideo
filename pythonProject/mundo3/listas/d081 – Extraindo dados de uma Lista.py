@@ -1,7 +1,3 @@
-from operator import truediv
-from re import I
-
-
 lista = []
 while True:
     numero = int(input('Digite o valor: '))
