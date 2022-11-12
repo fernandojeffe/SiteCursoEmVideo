@@ -1,4 +1,4 @@
-# variaveis de controle 
+vd# variaveis de controle 
 somaIdade = 0
 mediaIdade = 0
 maiorIdadeHomem =0 
