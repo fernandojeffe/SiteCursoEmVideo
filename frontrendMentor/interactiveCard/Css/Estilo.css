@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+    margin:0px;
+    padding:0px; 
+}
+div.fundo {
+    position:fixed;
+		left:0%;
+		top:0%;
+
+}
+
+div.cartaoFrente{
+    position: fixed;
+         top: 50px;
+         left: 200px;
+       
+}
+
+div.cartaoCosta{
+    position: fixed;
+        top: 320px;
+        left: 300px;
+}
+
+div.attribution {
+    font-size: 11px; text-align: center;
+    color: hsl(228, 45%, 44%);
+}
+
