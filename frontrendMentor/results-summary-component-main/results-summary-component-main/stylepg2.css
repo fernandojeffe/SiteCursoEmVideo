@@ -1,0 +1,24 @@
+main{
+    font-size: 18px;
+    font-weight: 100;
+    font-family: Hanken Grotesk,sans-serif;
+    text-align: center;
+
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-areas: 
+        "img1"
+        "img2"
+        "h1"
+     ;
+}
+.img2{
+    width: 200px;
+}
+
+h1{
+    color: blueviolet;
+}
