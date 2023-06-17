@@ -5,9 +5,7 @@
     font-family: Roboto,sans-serif;
     font-weight: 400;
     max-width: 1440px;
-    min-width: 375px;
     box-sizing: border-box;
-    text-align: center;
     font-size: 16px;
 
 }
@@ -26,6 +24,21 @@ body{
     ;
     justify-content: center;
     align-content: space-between;
+}
+@media(max-width: 900px){
+    .container{
+        display: grid;
+        grid-template-columns: 
+            " aside "
+            " main "
+        ;
+    }
+    .imgprincipal{
+        width: 600px;        
+    }
+    aside{
+        width: 600px;
+    }
 }
 main{
     border-radius: 20px 0px 0px 20px ;
@@ -49,19 +62,54 @@ main p{
 
 .escolha img {
     height: 20px;
+    display: inline-block;
+    margin: 10px 0px 0px 0px;
+
 }
 .escolha p{
-    
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 0px 0px 0px;
+    padding: 0px 20px 20px 20px;
 }
 
 aside{
+    width: 600px;
     border-radius: 0px 20px 20px 0px;
     background-color: hsl(0, 0%, 100%);
 }
 
 .imgprincipal{
     height: 600px;
-    padding: 30px 30px 30px 0px;
+    margin-top: 20px;
+    
+}
+
+.mail label{
+    font-weight: 700;
+    font-size: 14px;
+    
+    
+}
+.mail input{
+    border-radius: 10px;
+    width:350px;
+    height: 50px;
+    margin: 10px 0px 0px 0px;
+    cursor: pointer;
+}
+.mail button{
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    width:350px;
+    height: 50px;
+    margin: 30px 0px 0px 0px;
+    background-color: hsl(234, 29%, 20%);
+    cursor: pointer;
+    
+}
+.mail button:hover{
+    background-image: linear-gradient(to right, hsl(346, 100%, 66%), hsl(14, 98%, 61%));
 }
 
 .attribution{

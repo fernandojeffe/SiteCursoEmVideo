@@ -8,6 +8,7 @@
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 
 
 </head>
@@ -21,22 +22,28 @@
       <p>Join 60,000+ product managers receiving monthly <br> updates on:</p>
 
       <div class="escolha">
+        <div class="linha1">
+          <img src="assets/images/icon-success.svg" alt="ok">
+          <p>Product discovery and building what matters</p>
+        </div>
         <img src="assets/images/icon-success.svg" alt="ok">
-        <p>Product discovery and building what matters</p>
-        <img src="assets/images/icon-success.svg" alt="ok">
-        <p>Measuring to ensure updates are a success</p>
+        <p>Measuring to ensure updates are a success</p><br>
         <img src="assets/images/icon-success.svg" alt="ok">
         <p>And much more!</p>
       </div>
 
       <div class="mail">
-        <label for="textarea">Email address</label>
-        <textarea name="mail" id="" cols="30" rows="" placeholder="email@company.com"></textarea> 
-        <button>Subscribe to monthly newsletter</button>        
+          <label for="email">Email address</label><br>
+          <input type="email" name="email" placeholder="     email@company.com">
+          <button type="submit">Subscribe to monthly newsletter</button>
+        </form>    
       </div>
     </main>
     <aside>
-      <img class="imgprincipal" src="assets/images/illustration-sign-up-desktop.svg" alt="Ilustrativo">
+      <picture>
+        <source media="(max-width: 900px )" srcset="assets/images/illustration-sign-up-mobile.svg">
+        <img class="imgprincipal" src="assets/images/illustration-sign-up-desktop.svg" alt="Ilustrativo">
+      </picture>
     </aside>
   </div>
 
