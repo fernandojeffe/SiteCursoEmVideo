@@ -7,42 +7,40 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
 
   <!-- Sign-up form start -->
 
-  Stay updated!
+  <div class="container">
+    <main>
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly <br> updates on:</p>
 
-  Join 60,000+ product managers receiving monthly updates on:
+      <div class="escolha">
+        <img src="assets/images/icon-success.svg" alt="ok">
+        <p>Product discovery and building what matters</p>
+        <img src="assets/images/icon-success.svg" alt="ok">
+        <p>Measuring to ensure updates are a success</p>
+        <img src="assets/images/icon-success.svg" alt="ok">
+        <p>And much more!</p>
+      </div>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
+      <div class="mail">
+        <label for="textarea">Email address</label>
+        <textarea name="mail" id="" cols="30" rows="" placeholder="email@company.com"></textarea> 
+        <button>Subscribe to monthly newsletter</button>        
+      </div>
+    </main>
+    <aside>
+      <img class="imgprincipal" src="assets/images/illustration-sign-up-desktop.svg" alt="Ilustrativo">
+    </aside>
+  </div>
 
   <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
