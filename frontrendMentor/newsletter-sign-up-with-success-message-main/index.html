@@ -8,7 +8,7 @@
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  
 
 
 </head>
@@ -33,12 +33,18 @@
       </div>
 
       <div class="mail">
-          <label for="email">Email address</label><br>
-          <input type="email" name="email" placeholder="     email@company.com">
-          <button type="submit">Subscribe to monthly newsletter</button>
-        </form>    
+          <form id="novoForm" action="" method="get">
+
+            <label for="email-input" class="email-label">Email address <span id="emailErro-Msn"  style="display: none">Valid email required</span></label><br>
+
+            <input type="email" id="email-input" required name="email" placeholder="     email@company.com" oninput="validoEmail()">
+            
+            <button id="notifica-btn" onclick="novaPagina()">Subscribe to monthly newsletter</button>
+
+          </form>    
       </div>
     </main>
+
     <aside>
       <picture>
         <source media="(max-width: 900px )" srcset="assets/images/illustration-sign-up-mobile.svg">
@@ -53,5 +59,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
 </body>
+<script src="script.js"></script>
 </html>

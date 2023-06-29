@@ -18,28 +18,12 @@ body{
 .container{
     display: grid;
     grid-template-areas: 
-    ". . ."
-    "main . aside"
-    ". . ."
-    ;
+    "main aside"
+      ;
     justify-content: center;
     align-content: space-between;
 }
-@media(max-width: 900px){
-    .container{
-        display: grid;
-        grid-template-columns: 
-            " aside "
-            " main "
-        ;
-    }
-    .imgprincipal{
-        width: 600px;        
-    }
-    aside{
-        width: 600px;
-    }
-}
+
 main{
     border-radius: 20px 0px 0px 20px ;
     background-color: hsl(0, 0%, 100%);
@@ -74,7 +58,7 @@ main p{
 }
 
 aside{
-    width: 600px;
+    width: 450px;
     border-radius: 0px 20px 20px 0px;
     background-color: hsl(0, 0%, 100%);
 }
@@ -88,9 +72,15 @@ aside{
 .mail label{
     font-weight: 700;
     font-size: 14px;
-    
+    display: inline-flex;
+}
+span{
+    text-align: right;
+    padding: 0px 0px 0px 120px ;
+    color: red;
     
 }
+
 .mail input{
     border-radius: 10px;
     width:350px;
@@ -116,3 +106,30 @@ aside{
     text-decoration: underline;
     text-align: center;
 }
+
+@media(max-width: 900px){
+    .container{
+        display: grid;
+        grid-template-areas: 
+            "aside"
+            "main"
+        ;
+    }
+    .imgprincipal{
+        width: 600px;        
+    }
+
+    main{
+        border-radius: 0%;
+    }
+
+    aside{        
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 100%;
+        border-radius: 0%;
+    }
+}
+
+
+
