@@ -25,6 +25,6 @@ function validoEmail(){
   function success(){
     const emailInput =document.getElementById("email-input")
     const notificaBtn = document.getElementById("notifica-btn");
-    const puxarPgn = 
+    const puxarPgn = praManhã
   }
   
