@@ -22,9 +22,20 @@ function validoEmail(){
     document.getElementById("email-input").valeu = "";
   }
 
-  function success(){
+  function novaPagina(){
     const emailInput =document.getElementById("email-input")
     const notificaBtn = document.getElementById("notifica-btn");
-    const puxarPgn = praManhã
+    const novaPg = document.getElementById("novaPagina");
+
+    if (emailInput.value !== "") {
+      limparInput();
+      novaPg.style.display = "block";
+      notificaBtn.disabled = true;
+  
+      setTimeout(function () {
+        novaPg.style.display = "";
+        notificaBtn.disabled = false;
+      }, 3000);
+    }
   }
   
