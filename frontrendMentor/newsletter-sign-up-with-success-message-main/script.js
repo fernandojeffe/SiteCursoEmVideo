@@ -22,20 +22,21 @@ function validoEmail(){
     document.getElementById("email-input").valeu = "";
   }
 
-  function novaPagina(){
-    const emailInput =document.getElementById("email-input")
-    const notificaBtn = document.getElementById("notifica-btn");
-    const novaPg = document.getElementById("novaPagina");
+  function novaPagina() {
+    var emailInput = document.getElementById("email-input");
+    var notificaBtn = document.getElementById("notifica-btn");
+    var abrir = document.getElementById("open1");
 
+  
     if (emailInput.value !== "") {
       limparInput();
-      novaPg.style.display = "block";
+      document.getElementById("open1").src ="sucess.html";
       notificaBtn.disabled = true;
   
       setTimeout(function () {
-        novaPg.style.display = "";
+        window.location="open1"; 
+       
         notificaBtn.disabled = false;
       }, 3000);
     }
   }
-  
