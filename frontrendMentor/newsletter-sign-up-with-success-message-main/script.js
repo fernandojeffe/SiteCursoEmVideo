@@ -30,7 +30,7 @@ function validoEmail(){
   
     if (emailInput.value !== "") {
       limparInput();
-      document.getElementById("open1").src ="sucess.html";
+      open.display
       notificaBtn.disabled = true;
   
       setTimeout(function () {

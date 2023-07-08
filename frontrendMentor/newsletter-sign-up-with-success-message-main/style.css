@@ -16,6 +16,7 @@ body{
 }
 
 .container{
+    margin-top: 200px;
     display: grid;
     grid-template-areas: 
     "main aside"
