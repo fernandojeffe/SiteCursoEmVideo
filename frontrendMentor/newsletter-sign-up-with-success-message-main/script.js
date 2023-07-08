@@ -29,12 +29,13 @@ function validoEmail(){
 
   
     if (emailInput.value !== "") {
-      limparInput();
-      open.display
+      limpar();
+      abrir.style.display = "block";
       notificaBtn.disabled = true;
   
       setTimeout(function () {
-        window.location="open1"; 
+        
+        window.location.href="sucess.html"; 
        
         notificaBtn.disabled = false;
       }, 3000);
