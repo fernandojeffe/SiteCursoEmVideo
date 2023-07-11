@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
 :root{
     --Darkcyan: hsl(158, 36%, 37%);
     --Cream: hsl(30, 38%, 92%);
@@ -6,19 +8,18 @@
     --White: hsl(0, 0%, 100%);
 
 }
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
+       
+}
+body{
+    background-color: var(--Cream);
     font-size: 14px;
     color: var(--Darkgrayishblue);
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-    
-}
-body{
-    background-color: var(--Cream);
 }
 
 .container{
@@ -35,18 +36,20 @@ body{
     display: grid;
     grid-template-areas:
         "aside main"
-        "attribution attribution"
         ;
     justify-content: center;
     align-content: space-between;
 }
-
+aside{
+    margin-top: 30px;
+}
 aside img {
     width: 280px;
     border-radius: 10px 0px 0px 10px;
 }
 
 main{
+    margin-top: 30px;
     width: 220px;
     padding: 20px;
     background-color: var(--White);
@@ -54,6 +57,7 @@ main{
 }
 main h2{
     
+    font-size: 14px;
     letter-spacing: 4px;
 }
 main h1{
@@ -80,7 +84,7 @@ main h1{
     font-family: 'Fraunces', serif;
     font-weight: 700;
     color: var(--Darkcyan);
-    font-size: 40px;
+    font-size: 35px;
     display: inline-flex;
 }
 
@@ -99,6 +103,9 @@ button{
     border-radius: 5px;
     margin-top: 20px;
     cursor: pointer;
+    box-shadow: none;
+    border: none;
+    
 }
 
 button:hover{
@@ -110,7 +117,7 @@ button:hover{
     
 }
 
-@media(max-width: 375px){
+@media(max-width: 700px){
     .informacao{
         position: relative;
     left: 50%;
@@ -120,7 +127,6 @@ button:hover{
     grid-template-areas:
         "aside"
         "main"
-        "attribution"
         ;
     justify-content: center;
     align-content: space-between;
@@ -128,6 +134,7 @@ button:hover{
 
     aside img{
         border-radius: 10px 10px 0px 0px;
+        
     }
 
     main{
