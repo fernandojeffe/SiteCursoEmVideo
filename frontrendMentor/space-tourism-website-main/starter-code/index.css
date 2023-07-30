@@ -3,15 +3,20 @@
 
 *{
     margin: 0;
-    padding: 0;
-    
-    
+    padding: 0;    
 }
+
 .home{
     background-image: url(assets/home/background-home-desktop.jpg);
     background-size: cover;
-    width: 1440px;
-    height: 900px;
+}
+.containerHome{
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+}
+.mobile{
+    visibility: hidden;
 }
 
 
@@ -22,7 +27,6 @@
     background-repeat: no-repeat;
     background-position: left;
     height: 96px;
-    width: 1385px;
     margin-top:55px;
     margin-left: 40px;
     display: flex;
@@ -86,9 +90,8 @@ nav a:hover::after{
 main{
     width: 450px;
     height: 382px;
-    margin-top: 387px;
-    margin-left: 165px;
     float: left;
+    margin: 387px 0px 131px 165px;
 }
 
 main h2{
@@ -119,24 +122,181 @@ main p{
     text-align: left;
 }
 
-button{
+.btmExplore{
     background-color: #D0D6F9;
     border: none;
     border-radius: 50%;
     width: 274px;
     height: 274px;
     float: right;
-    margin-top: 455px;
-    margin-right: 165px;
     font-family: 'Bellefair', serif;
     font-size: 32px;
-
+    margin: 495px 165px 131px 0px;
 }
 
 button:hover {
     box-shadow: 0px 0px 60px 0 #979797 inset, 0 0 0px 60px #979797;
 }
 
+@media (max-width: 1121px){
+    .home{
+        background-image: url(assets/home/background-home-tablet.jpg);
+    }
+    .cabecalho{
+        background-image: url(assets/shared/logo.svg);
+        background-size: 48px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: left;
+        height: 96px;
+        margin-top: 0px;
+        margin-left: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .linha{
+        display: none;
+    }
+    nav{      
+        float: right;
+        display: flex;
+        height: 96px;
+        width: 450px;
+        top: 1px;
+        right: 0px;
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(5px);
+        align-items: center; 
+        justify-content: space-evenly;
+        position: relative;
+        box-shadow: 0px 1px 2px 1px white;
+    }
+    nav strong{
+        display: none;
+    }
+    nav a{
+        font-size: 14px;
+    }
 
+    main{
+        height: 334px;
+        margin-top: 202px;
+        margin-left: 159px;
+    }
+    main h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    main p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .btmExplore{
+        width: 242px;
+        height: 242px;
+        margin: 156px 263px 90px 263px;
+    }
 
+    @media (max-width: 564px){
+        .home{
+            background-image: url(assets/home/background-home-mobile.jpg);
+            width: 100%;
+        }
+        .cabecalho{
+            background-image: none;
+            margin: 0;
+        }
+        .linha{
+            display: none;
+        }
+        .mobile{
+            visibility: visible;
+            height: 24px;
+            margin-top: 90px;
+            margin-left: 40px;
+            float: left;
+        }
+        nav{             
+            float: right;
+            display: flex;
+            height: 96px;
+            width: 450px;
+            right: 660px;
+            backdrop-filter: blur(5px);
+            background-color: rgba(255, 255, 255, 0.04);
+            align-items: center; 
+            justify-content: space-evenly;
+            position: relative;
+            box-shadow: rgba(255, 255, 255, 0.04);
+        }
+        nav strong{
+            display: none;
+        }
+        nav a{
+            font-size: 14px;
+        }
+        .btn-menu {
+            background: none;
+            border: none;
+            display: flex;
+            color: #FFFFFF;
+            cursor: pointer;
+            flex-direction: row-reverse;
+            margin: 10px;
+          }
+          .hamburger {
+            border-top: 0.125rem solid;
+            width: 1.25rem;
+          }
+          .hamburger::after,
+          .hamburger::before {
+            content: " ";
+            display: block;
+            width: 1.25rem;
+            height: 0.125rem;
+            background: currentColor;
+            margin-top: 0.3125rem;
+            position: relative;
+          }
+          .nav.active .menu {
+            height: calc(100vh - 4.6875rem);
+            visibility: visible;
+            overflow-y: auto;
+          }
+          .nav.active .hamburger {
+            border-top-color: transparent;
+          }
+          .nav.active .hamburger::before {
+            transform: rotate(135deg);
+          }
+          .nav.active .hamburger::after {
+            transform: rotate(-135deg);
+            top: -0.4375rem;
+          }
+    
+        main{
+            height: 276px;
+            width: 327px;
+            margin: 112px 12px 0px 12px;
+        }
+        main h1{
+            font-size: 80px;
+            text-align: center;
+        }
+        main h2{
+            font-size: 16px;
+            text-align: center;
 
+        }
+        main p{
+            font-size: 15px;
+            text-align: center;
+        }
+        .btmExplore{
+            width: 150px;
+            height: 150px;
+            margin: 81px 113px 48px 112px;
+        }
+
+    }    
+}

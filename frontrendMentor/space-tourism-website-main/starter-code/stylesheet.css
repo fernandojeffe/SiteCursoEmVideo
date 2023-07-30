@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+:root {
+    font-size: 16px;
+    --baseAzul: #0B0D17;
+    --azulClaro: hsl(231, 77%, 90%);
+    --linha: #979797;
+    --branco: #FFFFFF;
+  }
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.corpo{
+  background-image: url(assets/home/background-home-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.logo{
+  width: 3rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 4.6875rem;
+  margin-top: 2.5rem;
+  margin-left: 3.125rem;
+  align-items: center;
+}
+.linha{
+  width : 473px; 
+	border: 1px solid;
+  color: var(--linha);
+  z-index: 1;
+  float: left;
+  position: relative;
+  margin-left: 167px;
+  top: -40px;
+}
+.menu {
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  float: left;
+  display: flex;
+  gap: 0.5rem;
+  height: 6rem;
+  width: 51.875rem;
+  backdrop-filter: blur(0.3125rem);
+  position: relative;
+  z-index: 2;
+  font: bold;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+    
+}
+
+
+.menu a {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--branco);
+  text-decoration: none; 
+  font-size: 1rem;
+  position: relative; padding: 0px 0px 30px 0;
+ 
+}
+.menu a::after{
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background-color: var(--branco);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+.menu a:hover::after{
+  width: 100%;
+}
+
+.btn-menu {
+  display: none;
+}
+
+
+main{
+  width: 450px;
+  height: 382px;
+  position: absolute;
+  float: left;
+  margin: 387px 0px 131px 165px;
+}
+
+main h2{
+  color: #D0D6F9;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: 100;
+  letter-spacing: 4.75px;
+  text-transform: uppercase;
+}
+
+main h1{
+  color: #FFFFFF;
+  font-family: 'Bellefair', serif;
+  font-size: 150px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+main p{
+  color: #D0D6F9;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 4.75px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.explore-btn{
+  background-color: #D0D6F9;
+  border: none;
+  border-radius: 50%;
+  width: 274px;
+  height: 274px;
+  float: right;
+  font-family: 'Bellefair', serif;
+  font-size: 32px;
+  margin: 495px 165px 131px 0px;
+  position: relative;
+}
+.explore-btn:hover {
+  box-shadow: 0px 0px 60px 0 #979797 inset, 0 0 0px 60px #979797;
+}
+@media (max-width: 1065px){
+  .explore-btn{
+    margin: 900px 165px 131px 0px;
+  }
+}
+@media (max-width: 870px){
+  .corpo{
+    background-image: url(assets/home/background-home-tablet.jpg);
+    background-size: cover;
+  }
+  .header{
+    height: 96px;
+    margin-top: 0px;
+    justify-content: space-between;
+  }
+  .linha{
+    display: none;
+  }
+  .menu{
+    height: 96px;
+    width: 450px;
+    top: 1px;
+    right: 0px;
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(5px);
+    justify-content: space-evenly;
+    position: relative;
+    box-shadow: 0px 1px 2px 1px white;     
+  }
+  .menu strong{
+    visibility: hidden;
+  }
+  .menu a{
+    font-size: 14px;
+    padding: 30px 0px 40px 0px;
+  }
+  main{
+        height: 334px;
+        margin-top: 202px;
+        margin-left: 159px;
+    }
+    main h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    main p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .btmExplore{
+        width: 242px;
+        height: 242px;
+        margin: 156px 263px 90px 263px;
+    }
+    main{
+      height: 334px;
+      margin-top: 202px;
+      margin-left: 159px;
+    }
+    main h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    main p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .btmExplore{
+        width: 242px;
+        height: 242px;
+        margin: 156px 263px 90px 263px;
+    }
+}
+
+@media (max-width: 620px) {
+  .corpo{
+    background-image: url(assets/home/background-home-mobile.jpg);
+    background-size: cover;
+  }
+  .logo img{
+    width: 24px;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    top: 4.6875rem;
+    right: 0;
+    background: var();
+    width: 60%;
+    height: 0;
+    z-index: 1;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding: 32px;
+    backdrop-filter: blur(50px);    
+  }
+  .menu a {
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+  }
+  main{
+    width: 327px;
+    height: 276px;
+    margin-top: 112px;
+    margin-left: 24px;
+    
+  }
+  main h2{
+    font-size: 16px;
+    text-align: center;
+    padding: 16px;
+  }
+  main h1{
+    font-size: 80px;
+    text-align: center;
+    padding: 16px;
+  }
+  main p{
+    font-size: 15px;
+    text-align: center;
+  }
+  .explore-btn{
+    width: 150px;
+    height: 150px;
+    margin: 469px 112px 48px 113px;
+  }
+  .btn-menu {
+    background: none;
+    border: none;
+    font: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--linha);
+    padding: 1rem 0;
+    cursor: pointer;
+    width: 58px;
+    margin-left: 24px;
+  }
+  .hamburger {
+    border-top: 0.225rem solid;
+  }
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+  }
+  .nav.active .menu {
+    height: calc(100vh - 4.6875rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .nav.active .menu strong{
+    visibility: visible;
+  }
+  
+  .nav.active .hamburger {
+    border-top-color: transparent;
+  }
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+  }    
+  
+}

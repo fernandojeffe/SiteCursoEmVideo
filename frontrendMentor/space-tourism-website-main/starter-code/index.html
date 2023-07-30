@@ -3,41 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script defer src="script.js"></script>
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body class="home">
+<body>
 
-  <div class="containerHome">
-
-    <div class="cabecalho">
-      <div class="esq">
-        <hr class="linha" width="473" color="#979797"> 
-      </div>
-      <div class="menu">
-        <nav>
-          <a href=""><strong>00</strong> HOME</a>
-          <a href=""><strong>01</strong> DESTINATION</a>
-          <a href=""><strong>02</strong> CREW</a>
-          <a href=""><strong>03</strong> TECHNOLOGY</a>
-        </nav>
-      </div>
-    </div>
-
+  <div class="corpo">
+    <header class="header">
+      <a href="/" class="logo"><img src="assets/shared/logo.svg" alt="logo"></a>
+       <nav class="nav">
+        <button class="btn-menu"
+        aria-label="Abrir Menu"
+        aria-haspopup="true"
+        aria-controls="menu"
+        aria-expanded="false"><span class="hamburger"></span>
+        </button>
+       
+        <ul class="menu" id="menu" role="menu">
+          <li> <a href="/"><strong>00</strong> Home</a></li>
+          <li> <a href="destination-moon.html"><strong>01</strong> Destinatio</a></li>
+          <li> <a href=""><strong>02</strong> Crew</a></li>
+          <li> <a href=""><strong>03</strong> Technology</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="detalhe" > <hr class="linha"></div>
     <main>
       <h2>So, you want to travel to</h2>
-      <h1>Space</h1>
-      <p>
+      <h1 class="principal">
+        Space
+      </h1> 
+     
+      <p class="pagina1">
         Let’s face it; if you want to go to space, you might as well genuinely go to
         outer space and not hover kind of on the edge of it. Well sit back, and relax
         because we’ll give you a truly out of this world experience!
       </p>
     </main>
-    <button>Explore</button>
+    <button class="explore-btn">Explore</button>
   </div>
 
-  <script src="script.js"></script>
 </body>
 </html>
