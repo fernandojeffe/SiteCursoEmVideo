@@ -1,32 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 :root {
-    font-size: 16px;
     --baseAzul: #0B0D17;
     --azulClaro: hsl(231, 77%, 90%);
     --linha: #979797;
     --branco: #FFFFFF;
-  }
-  
+  }  
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 .corpo{
   background-image: url(assets/home/background-home-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   width: 100%;
-  height: auto;
+}
+.corpoDestination{
+  background-image: url(assets/destination/background-destination-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
 }
 .logo{
   width: 3rem;
 }
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -59,11 +61,8 @@
   z-index: 2;
   font: bold;
   letter-spacing: 2.7px;
-  text-transform: uppercase;
-    
+  text-transform: uppercase;   
 }
-
-
 .menu a {
   display: block;
   padding: 1rem;
@@ -73,7 +72,6 @@
   text-decoration: none; 
   font-size: 1rem;
   position: relative; padding: 0px 0px 30px 0;
- 
 }
 .menu a::after{
   content: " ";
@@ -89,11 +87,6 @@
   width: 100%;
 }
 
-.btn-menu {
-  display: none;
-}
-
-
 main{
   width: 450px;
   height: 382px;
@@ -101,7 +94,6 @@ main{
   float: left;
   margin: 387px 0px 131px 165px;
 }
-
 main h2{
   color: #D0D6F9;
   font-family: 'Barlow Condensed', sans-serif;
@@ -110,15 +102,13 @@ main h2{
   letter-spacing: 4.75px;
   text-transform: uppercase;
 }
-
 main h1{
-  color: #FFFFFF;
+  color: var(--branco);
   font-family: 'Bellefair', serif;
   font-size: 150px;
   font-weight: 100;
   text-transform: uppercase;
 }
-
 main p{
   color: #D0D6F9;
   font-family: 'Barlow Condensed', sans-serif;
@@ -128,6 +118,120 @@ main p{
   line-height: 32px;
   letter-spacing: 1px;
   text-align: left;
+}
+.moon p{
+  font-family:'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  color: var(--branco);
+  font-size: 28px;
+  letter-spacing: 4.72px;
+  width: 382px;
+  height: 34px;
+  margin-top: 212px;
+  margin-left: 166.5px;
+}
+.moon strong{
+  color: var(--linha);
+  margin-right: 15px;
+}
+.moon img{
+  margin: 97px 0px 112px 230px;
+  float: left;
+}
+.mainDestination{
+  width: 445px;
+  height: 472px;
+  float: right;
+  margin: 50px 165px 118px 830px;
+}
+.menuDestination{
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  height: 36px;
+  width: 285.5px;
+  position: relative;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;   
+}
+.menuDestination a{
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--linha);
+  text-decoration: none; 
+  font-size: 1rem;
+  position: relative; padding: 0px 0px 20px 0;
+}
+.menuDestination a:hover{
+  color: var(--branco);
+}
+.menuDestination a::after{
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background-color: var(--branco);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+.menuDestination a:hover::after{
+  width: 100%;
+}
+.mainDestination h1{
+  font-size: 100px;
+  font-family:'Bellefair', serif;
+  margin: 37px 111.5px 14px 0.5px;
+}
+ .p1{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  width: 444px;
+  height: 128px;
+}
+.linhaMoon{
+  width: 444px;
+  margin-top: 54px;
+  color: var(--linha);
+  margin: 83px 0px 28px 0px;
+  
+}
+.p2{
+  font-family: 'Barlow Condensed', sans-serif;
+  width: 143px;
+  height: 61px;
+  display: inline-block;
+  margin-right: 79px;
+  font-size: 14px;
+  color: var(--linha);
+}
+.pp2{
+  font-size: 28px;
+  font-family:'Bellefair', serif;
+  color: var(--branco);
+}
+.p3{
+  font-size: 14px;
+  font-family: 'Barlow Condensed', sans-serif;
+  width: 143px;
+  height: 61px;
+  display: inline-block;
+  color: var(--linha);
+}
+.pp3{
+  font-size: 28px;
+  font-family:'Bellefair', serif;
+  color: var(--branco);
+}
+
+
+.btn-menu {
+  display: none;
 }
 .explore-btn{
   background-color: #D0D6F9;
@@ -149,10 +253,13 @@ main p{
     margin: 900px 165px 131px 0px;
   }
 }
-@media (max-width: 870px){
+@media (max-width: 912px){
   .corpo{
     background-image: url(assets/home/background-home-tablet.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%
   }
   .header{
     height: 96px;
@@ -182,8 +289,7 @@ main p{
   }
   main{
         height: 334px;
-        margin-top: 202px;
-        margin-left: 159px;
+        margin: 202px 159px 0px 159px;
     }
     main h2{
         font-size: 20px;
@@ -193,10 +299,11 @@ main p{
         font-size: 16px;
         text-align: center;
     }
-    .btmExplore{
+    .explore-btn{
         width: 242px;
         height: 242px;
-        margin: 156px 263px 90px 263px;
+        margin: 692px 263px 90px 263px;
+        position: absolute;
     }
     main{
       height: 334px;
@@ -211,17 +318,14 @@ main p{
         font-size: 16px;
         text-align: center;
     }
-    .btmExplore{
-        width: 242px;
-        height: 242px;
-        margin: 156px 263px 90px 263px;
-    }
 }
-
 @media (max-width: 620px) {
   .corpo{
     background-image: url(assets/home/background-home-mobile.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
   }
   .logo img{
     width: 24px;
@@ -231,7 +335,6 @@ main p{
     position: absolute;
     top: 4.6875rem;
     right: 0;
-    background: var();
     width: 60%;
     height: 0;
     z-index: 1;
@@ -318,6 +421,5 @@ main p{
   .nav.active .hamburger::after {
     transform: rotate(-135deg);
     top: -0.4375rem;
-  }    
-  
+  }
 }
