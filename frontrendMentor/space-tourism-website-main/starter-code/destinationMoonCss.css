@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+:root {
+    --baseAzul: #0B0D17;
+    --azulClaro: hsl(231, 77%, 90%);
+    --linha: #979797;
+    --branco: #FFFFFF;
+  }  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{  
+    background-image: url(assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+.logo{
+    width: 3rem;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 4.6875rem;
+    margin-top: 2.5rem;
+    margin-left: 3.125rem;
+    align-items: center;
+}
+.linha{
+    width : 473px; 
+    border: 1px solid;
+    color: var(--linha);
+    z-index: 1;
+    float: left;
+    position: relative;
+    margin-left: 167px;
+    top: -40px;
+}
+.menu {
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    float: left;
+    display: flex;
+    gap: 0.5rem;
+    height: 6rem;
+    width: 51.875rem;
+    backdrop-filter: blur(0.3125rem);
+    position: relative;
+    z-index: 2;
+    font: bold;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;   
+}
+.menu a {
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--branco);
+    text-decoration: none; 
+    font-size: 1rem;
+    position: relative; padding: 0px 0px 30px 0;
+}
+.menu a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: var(--branco);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+.menu a:hover::after{
+    width: 100%;
+}
+.moon p{
+    font-family:'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    color: var(--branco);
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    width: 382px;
+    height: 34px;
+    margin-top: 212px;
+    margin-left: 166.5px;
+}
+.moon strong{
+    color: var(--linha);
+    margin-right: 15px;
+}
+.moon img{
+    margin: 97px 0px 112px 230px;
+    float: left;
+}
+.mainDestination{
+    width: 445px;
+    height: 472px;
+    float: right;
+    margin: 50px 165px 118px 0px;
+}
+.menuDestination{
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    height: 36px;
+    width: 285.5px;
+    position: relative;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;   
+}
+.menuDestination a{
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--linha);
+    text-decoration: none; 
+    font-size: 1rem;
+    position: relative;
+    padding: 0px 0px 20px 0;
+}
+.menuDestination a:hover{
+    color: var(--branco);
+}
+.menuDestination a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: var(--branco);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+.menuDestination a:hover::after{
+    width: 100%;
+}
+.mainDestination h1{
+    font-size: 100px;
+    font-family:'Bellefair', serif;
+    margin: 37px 111.5px 14px 0.5px;
+}
+.detalheMoon{
+    width: 444px;
+    color: var(--linha);
+    margin: 83px 0px 28px 0px;
+
+}
+  .mainDestination h1{
+    color: var(--branco);
+    font-family: 'Bellefair', serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+  .mainDestination p{
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 4.75px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.p1{
+    line-height: 32px;
+    width: 444px;
+    height: 128px;
+}
+.p2{
+    width: 170px;
+    height: 61px;
+    display: inline-block;
+    margin-right: 79px;
+    font-size: 14px;
+    color: var(--linha);
+    text-transform: uppercase;
+}
+  
+.p3{
+    font-size: 28px;
+    width: 146px;
+    height: 61px;
+    display: inline-block;
+    color: var(--linha);
+    text-transform: uppercase;
+}
+.pp2{
+    font-size: 28px;
+    font-family:'Bellefair', serif;
+    color: var(--branco);
+}
+.pp3{
+    font-size: 28px;
+    font-family:'Bellefair', serif;
+    color: var(--branco);
+}
+@media (max-width: 910px){
+    body{
+        background-image: url(assets/destination/background-destination-tablet.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 300vh;
+    }
+    .header{
+        height: 96px;
+        margin-top: 0px;
+        justify-content: space-between;
+    }
+    .linha{
+        display: none;
+    }
+    .menu{
+        height: 96px;
+        width: 450px;
+        top: 1px;
+        right: 0px;
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(5px);
+        justify-content: space-evenly;
+        position: relative;
+        box-shadow: 0px 1px 2px 1px white;     
+    }
+    .menu strong{
+        visibility: hidden;
+    }
+    .menu a{
+        font-size: 14px;
+        padding: 30px 0px 40px 0px;
+    }
+    .moon p{
+        margin-top: 40px;
+        margin-left: 38.5px;
+        font-size: 20px;
+    }
+    .moon img{
+        width: 300px;
+        margin: 60px 0px 0px 223px;
+    }
+    .mainDestination{
+        width: 573px;
+        height: 389px;
+        margin: 413px 98px 62px 97px;
+        position: absolute;
+        text-align: center;
+    }
+    .menuDestination{
+        width: 285.5px;
+        height: 34px;
+        margin: auto;
+    }
+    .mainDestination h1{
+        font-size: 80px;
+        margin: 32px 0px 8px 0px;
+    }
+    .mainDestination .p1{
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: auto;
+        width: 528px;
+    } 
+    .detalheMoon{
+        margin: 0;
+    }
+    .linhaMoon{
+        width: 573px;
+        color: var(--linha);
+        margin: 29px 0px 29px 0px;
+    }      
+}
+@media (max-width: 620px) {
+   body{
+      background-image: url(assets/destination/background-destination-mobile.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 100vh; 
+    }  
+    .logo img{
+        width: 24px;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        top: 4.6875rem;
+        right: 0;
+        width: 60%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+        padding: 32px;
+        backdrop-filter: blur(50px);    
+    }
+    .menu a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+        border-radius: 0;
+    }
+    .explore-btn{
+        width: 150px;
+        height: 150px;
+        margin: 469px 112px 48px 113px;
+      }
+      .btn-menu {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--linha);
+        padding: 1rem 0;
+        cursor: pointer;
+        width: 58px;
+        margin-left: 24px;
+      }
+      .hamburger {
+        border-top: 0.225rem solid;
+      }
+      .hamburger::after,
+      .hamburger::before {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+      }
+      .nav.active .menu {
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+      }
+      .nav.active .menu strong{
+        visibility: visible;
+      }
+      
+      .nav.active .hamburger {
+        border-top-color: transparent;
+      }
+      .nav.active .hamburger::before {
+        transform: rotate(135deg);
+      }
+      .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+      }
+    .moon p{
+        margin-top: 24px;
+        margin-left: 77.5px;
+        font-size: 16px;
+    }
+    .moon img{
+        width: 170px;
+        margin-top: 32px;
+        margin-left: 103px;
+    }
+    .mainDestination{
+        width: 327px;
+        height: 457px;
+        margin-top: 228px;
+        margin-left: 24px;
+    }
+    .menuDestination{
+        width: 237.5px;
+    }
+    .menuDestination a{
+        font-size: 14px;
+    }
+    .mainDestination h1{
+        font-size: 56px;
+    }
+    .mainDestination .p1{
+        margin-top: 1px;
+        font-size: 15px;
+        width: 300px;
+    }
+    .linhaMoon{
+        margin: 32px 0px 0px 0px;
+        width: 327PX;
+    }
+    .p2{
+        width: 216px;
+        margin-top: 32px;
+        margin-left: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .p3{
+        width: 216px;
+        margin: 32px 20% 58px 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
