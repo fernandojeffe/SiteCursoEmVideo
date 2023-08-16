@@ -152,6 +152,7 @@ main p{
   .linha{
     display: none;
   }
+ 
   .menu{
     height: 96px;
     width: 450px;
@@ -180,7 +181,7 @@ main p{
     }
     main p{
         font-size: 16px;
-        text-align: center;
+        text-align: center;        
     }
     .explore-btn{
         width: 242px;
