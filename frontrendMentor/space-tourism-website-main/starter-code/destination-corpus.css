@@ -158,7 +158,6 @@ body{
     font-family:'Bellefair', serif;
     margin: 37px 111.5px 14px 0.5px;
     color: var(--branco);
-    font-family: 'Bellefair', serif;
     font-weight: 100;
     text-transform: uppercase;
 }
@@ -310,7 +309,7 @@ body{
         background-size: cover;
         background-repeat: no-repeat;
         width: 100vw;
-        height: 200vh;
+        height: 100vh;
     }
 }
 @media (max-width: 620px) {
